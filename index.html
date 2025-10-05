@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vault-Tec Terminal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a;
+      color: #00ffff;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      text-shadow: 0 0 10px #00ffff;
+      animation: flicker 1.5s infinite;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 1em;
+      padding: 1em 2em;
+      background-color: #001f3f;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background-color: #003366;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 1em;
+      font-size: 0.8em;
+      opacity: 0.5;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity
