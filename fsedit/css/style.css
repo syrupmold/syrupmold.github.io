@@ -4,10 +4,10 @@ body {
 }
 
 body {
-  background-image: url(../bg.png);
-  background-size: cover;
   background-color: #000000;
+  color: #ffcc66;
 }
+
 
 body > .container {
   height: 450px;
